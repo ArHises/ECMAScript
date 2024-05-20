@@ -40,20 +40,15 @@ console.log(targetElement);
  */
 
 function findElementByClass(root, className) {
-    // Проверяем, есть ли у текущего элемента указанный класс
     if (root.classList && root.classList.contains(className)) {
         return root;
     }
-
-    // Рекурсивно проверяем все дочерние элементы
     for (let i = 0; i < root.children.length; i++) {
         const found = findElementByClass(root.children[i], className);
         if (found) {
             return found;
         }
     }
-
-    // Если элемент с указанным классом не найден, возвращаем null
     return null;
 }
 
