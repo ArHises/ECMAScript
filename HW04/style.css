@@ -1,0 +1,33 @@
+body {
+  background-color: black;
+}
+
+p,
+h1,
+h2 {
+  color: bisque;
+}
+.user {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.delete {
+  color: brown;
+
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dog-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.dog-image {
+  width: 200px;
+  height: 200px;
+}
